@@ -19,14 +19,13 @@
  * @left: Pointer to the left child node
  * @right: Pointer to the right child node
  */
-struct binary_tree_s
+typedef struct binary_tree_s
 {
 	int n;
 	struct binary_tree_s *parent;
 	struct binary_tree_s *left;
 	struct binary_tree_s *right;
-};
-
+} binary_tree_t;
 
 /*_______________________Typedef Struct Prototypes_______________________*/
 
