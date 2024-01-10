@@ -27,7 +27,6 @@ struct binary_tree_s
 	struct binary_tree_s *right;
 };
 
-
 /*___________________________________Typedef Struct Prototypes___________________________________*/
 
 typedef struct binary_tree_s binary_tree_t;
