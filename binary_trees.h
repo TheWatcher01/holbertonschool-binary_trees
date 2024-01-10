@@ -2,14 +2,14 @@
 #define _BINARY_TREES_H_
 
 
-/*___________________________________Standards Libraries___________________________________*/
+/*_______________________Standards Libraries_______________________*/
 
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 #include <stddef.h>
 
-/*___________________________________Structures Prototypes___________________________________*/
+/*_______________________Structures Prototypes_______________________*/
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -27,7 +27,7 @@ struct binary_tree_s
 	struct binary_tree_s *right;
 };
 
-/*___________________________________Typedef Struct Prototypes___________________________________*/
+/*_______________________Typedef Struct Prototypes_______________________*/
 
 typedef struct binary_tree_s binary_tree_t;
 typedef struct binary_tree_s bst_t;
@@ -35,7 +35,7 @@ typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
 
 
-/*___________________________________Functions  Prototypes___________________________________*/
+/*_______________________Functions  Prototypes_______________________*/
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
@@ -61,12 +61,12 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 
 
-/*___________________________________Statics Functions___________________________________*/
+/*_______________________Statics Functions_______________________*/
 
 
 
 
-/*___________________________________Globales Variables___________________________________*/
+/*_______________________Globales Variables_______________________*/
 
 
 
