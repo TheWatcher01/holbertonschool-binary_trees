@@ -1,13 +1,13 @@
 #ifndef _BINARY_TREES_H_
 #define _BINARY_TREES_H_
 
-
 /*_______________________Standards Libraries_______________________*/
 
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 #include <stddef.h>
+
 
 /*_______________________Structures Prototypes_______________________*/
 
@@ -26,6 +26,7 @@ struct binary_tree_s
 	struct binary_tree_s *left;
 	struct binary_tree_s *right;
 };
+
 
 /*_______________________Typedef Struct Prototypes_______________________*/
 
@@ -61,14 +62,7 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 
 
-/*_______________________Statics Functions_______________________*/
-
-
-
-
 /*_______________________Globales Variables_______________________*/
-
-
 
 
 
