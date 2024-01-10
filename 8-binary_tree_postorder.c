@@ -1,11 +1,7 @@
 #include "binary_trees.h"
 
 /**
-<<<<<<< HEAD
- * binary_tree_postorder - Goes through a binary tree using post-order traversal
-=======
  * binary_tree_postorder - Goes through binary tree using post-order traversal
->>>>>>> Teddy_branch
  * @tree: Pointer to the root node of the tree to traverse
  * @func: Pointer to a function to call for each node
  *
