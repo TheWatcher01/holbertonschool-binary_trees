@@ -41,20 +41,27 @@ static int print_t(const binary_tree_t *tree, int offset, int depth, char **s)
 }
 
 /**
- * _height - Measures the height of a binary tree
+ * binary_tree_height - Measures the height of a binary tree
+ * @tree: Pointer to the root node of the tree to measure the height
  *
- * @tree: Pointer to the node to measures the height
- *
- * Return: The height of the tree starting at @node
+ * Return: 0 If tree is NULL or a leaf.
  */
-static size_t _height(const binary_tree_t *tree)
+size_t binary_tree_height(const binary_tree_t *tree)
 {
-	size_t height_l;
-	size_t height_r;
+	size_t left_height, right_height;
 
-	height_l = tree->left ? 1 + _height(tree->left) : 0;
-	height_r = tree->right ? 1 + _height(tree->right) : 0;
-	return (height_l > height_r ? height_l : height_r);
+	/* If tree is NULL or a leaf, return 0 */
+	if (tree == NULL || (tree->left == NULL && tree->right == NULL))
+		return (0);
+
+	/* Recursively calculate the height of the left subtree */
+	left_height = binary_tree_height(tree->left);
+
+	/* Recursively calculate the height of the right subtree */
+	right_height = binary_tree_height(tree->right);
+
+	/* Return greater height between two subtree, + one for current node */
+	return ((left_height > right_height ? left_height : right_height) + 1);
 }
 
 /**
@@ -69,7 +76,7 @@ void binary_tree_print(const binary_tree_t *tree)
 
 	if (!tree)
 		return;
-	height = _height(tree);
+	height = binary_tree_height(tree);
 	s = malloc(sizeof(*s) * (height + 1));
 	if (!s)
 		return;
