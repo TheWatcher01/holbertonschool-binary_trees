@@ -8,9 +8,9 @@
  */
 int binary_tree_is_full(const binary_tree_t *tree)
 {
-	/* If tree is NULL, return 1 */
+	/* If tree is NULL, return 0 */
 	if (tree == NULL)
-		return (1);
+		return (0);
 
 	/* If the current node has no children, return 1 */
 	if (tree->left == NULL && tree->right == NULL)
