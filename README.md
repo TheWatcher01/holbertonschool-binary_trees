@@ -1,1 +1,0 @@
-# holbertonschool-binary_trees
