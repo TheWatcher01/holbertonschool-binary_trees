@@ -61,6 +61,10 @@ static int is_complete(const binary_tree_t *tree, int index, int number_nodes)
  */
 int binary_tree_is_complete(const binary_tree_t *tree)
 {
+	/* If the tree is NULL, it is not complete */
+	if (tree == NULL)
+		return (0);
+
 	/* Count the number of nodes in the tree */
 	int number_nodes = count_nodes(tree);
 
