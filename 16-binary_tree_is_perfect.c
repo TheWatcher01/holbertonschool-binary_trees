@@ -60,4 +60,5 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	/* subtrees are not perfect or don't have the same height, */
 	/* return 0 */
 	return (0);
+
 }
