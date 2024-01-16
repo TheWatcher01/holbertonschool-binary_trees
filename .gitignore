@@ -1,0 +1,6 @@
+.vscode/
+holbertonschool-binary_trees.code-workspace/vscode_workspace
+*
+!**/
+!*.*
+                           
